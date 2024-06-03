@@ -1,17 +1,14 @@
 import React from 'react';
-import i18n from 'i18next';
+import LanguageSwitcher from './LanguageSwitcher';
+import GreetingComponent from './GreetingComponent';
 
-const LanguageSwitcher: React.FC = () => {
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-  };
-
+const App: React.FC = () => {
   return (
     <div>
-      <button onClick={() => changeLanguage('en')}>English</button>
-      <button onClick={() => changeLanguage('zh')}>中文</button>
+      <LanguageSwitcher />
+      <GreetingComponent />
     </div>
   );
 };
 
-export default LanguageSwitcher;
+export default App;
