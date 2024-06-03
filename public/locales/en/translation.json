@@ -1,0 +1,5 @@
+// public/locales/en/translation.json
+{
+  "welcome": "Welcome to OpenResume",
+  "description": "OpenResume is a powerful open-source resume builder and resume parser."
+}
