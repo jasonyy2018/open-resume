@@ -36,6 +36,19 @@ i18n
   .use(HttpApi)
   .use(LanguageDetector)
   .use(initReactI18next)
-  .init(options);
+  .init({
+    fallbackLng: 'en',
+    debug: true,
+    backend: {
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
+    },
+    detection: {
+      order: ['localStorage', 'cookie', 'htmlTag', 'path', 'subdomain'],
+      caches: ['localStorage', 'cookie'],
+    },
+    react: {
+      useSuspense: false,
+    },
+  });
 
 export default i18n;
