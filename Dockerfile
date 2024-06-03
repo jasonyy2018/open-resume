@@ -6,6 +6,7 @@ RUN npm install react-i18next i18next
 RUN npm install --save-dev @types/react-i18next
 RUN npm install next-i18next
 RUN npm install sharp
+RUN npm install i18next-browser-languagedetector i18next-http-backend
 RUN npx update-browserslist-db@latest
 RUN npm run build
 
