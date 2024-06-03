@@ -14,6 +14,14 @@ i18n
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
+    detection: {
+      // 配置语言检测器
+      order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+      caches: ['cookie']
+    },
+    react: {
+      useSuspense: false,
+    }
   });
 
 export default i18n;
