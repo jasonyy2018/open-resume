@@ -1,0 +1,5 @@
+// public/locales/zh/translation.json
+{
+  "welcome": "欢迎使用 OpenResume",
+  "description": "OpenResume 是一个强大的开源简历生成器和简历解析器。"
+}
