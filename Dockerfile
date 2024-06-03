@@ -2,6 +2,8 @@ FROM node:18-alpine as builder
 WORKDIR /app
 COPY . .
 RUN npm install --include=dev
+RUN npm install react-i18next i18next
+RUN npm install --save-dev @types/react-i18next
 RUN npm run build
 
 FROM node:18-alpine AS runner
